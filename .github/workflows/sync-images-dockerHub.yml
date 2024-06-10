@@ -36,4 +36,12 @@ jobs:
         #!/usr/bin/env bash
          #skopeo copy docker://nextcloud/aio-nextcloud:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/nextcloud/aio-nextcloud:latest
          skopeo --insecure-policy copy docker://nextcloud/aio-watchtower:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/aio-watchtower:latest
+         skopeo --insecure-policy copy docker://nextcloud/aio-nextcloud:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/aio-nextcloud:latest
+         skopeo --insecure-policy copy docker://nextcloud/all-in-one:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/all-in-one:latest
+         skopeo --insecure-policy copy docker://nextcloud/aio-apache:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/aio-apache:latest
+         skopeo --insecure-policy copy docker://nextcloud/aio-redis:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/aio-redis:latest
+         skopeo --insecure-policy copy docker://nextcloud/aio-collabora:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/aio-collabora:latest
+         skopeo --insecure-policy copy docker://nextcloud/aio-imaginary:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/aio-imaginary:latest
+         skopeo --insecure-policy copy docker://nextcloud/aio-postgresql:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/aio-postgresql:latest
+         skopeo --insecure-policy copy docker://nextcloud/aio-notify-push:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/aio-notify-push:latest
  
