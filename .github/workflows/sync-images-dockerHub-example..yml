@@ -33,5 +33,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-        skopeo copy docker://nextcloud/aio-nextcloud:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/nextcloud/aio-nextcloud:latest
+        skopeo copy docker://hub.docker.com/nextcloud/aio-nextcloud:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/nextcloud/aio-nextcloud:latest
  
