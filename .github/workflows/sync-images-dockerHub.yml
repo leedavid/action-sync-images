@@ -35,5 +35,5 @@ jobs:
       run: |
         #!/usr/bin/env bash
          #skopeo copy docker://nextcloud/aio-nextcloud:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/nextcloud/aio-nextcloud:latest
-         skopeo --insecure-policy copy docker://nextcloud/aio-watchtower:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/nextcloud/aio-watchtower:latest
+         skopeo --insecure-policy copy docker://nextcloud/aio-watchtower:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/next/aio-watchtower:latest
  
