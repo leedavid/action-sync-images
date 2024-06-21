@@ -44,4 +44,5 @@ jobs:
          skopeo --insecure-policy copy docker://nextcloud/aio-imaginary:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/aio-imaginary:latest
          skopeo --insecure-policy copy docker://nextcloud/aio-postgresql:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/aio-postgresql:latest
          skopeo --insecure-policy copy docker://nextcloud/aio-notify-push:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/aio-notify-push:latest
+         skopeo --insecure-policy copy docker://nextcloud/aio-domaincheck:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/aio-domaincheck:latest
  
