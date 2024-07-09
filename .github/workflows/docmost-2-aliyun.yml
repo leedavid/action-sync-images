@@ -35,7 +35,7 @@ jobs:
       run: |
         #!/usr/bin/env bash
          #skopeo copy docker://nextcloud/aio-nextcloud:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/nextcloud/aio-nextcloud:latest
-         skopeo --insecure-policy copy docker://docmost/docmost:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/docmost/docmost:latest
+         skopeo --insecure-policy copy docker://docmost/docmost:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/docmost:latest
          skopeo --insecure-policy copy docker://postgres:16-alpine docker://registry.cn-hangzhou.aliyuncs.com/keersun/postgres:16-alpine
          skopeo --insecure-policy copy docker://redis:7.2-alpine docker://registry.cn-hangzhou.aliyuncs.com/keersun/redis:7.2-alpine
 
