@@ -35,6 +35,6 @@ jobs:
       run: |
         #!/usr/bin/env bash
          #skopeo copy docker://nextcloud/aio-nextcloud:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/nextcloud/aio-nextcloud:latest
-         skopeo --insecure-policy copy docker://louislam/uptime-kuma:1 docker://registry.cn-hangzhou.aliyuncs.com/keersun/uptime-kuma:1
+         skopeo --insecure-policy copy docker://gitlab/gitlab-ce:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/gitlab-ce:latest
 
  
