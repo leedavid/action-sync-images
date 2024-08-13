@@ -39,5 +39,6 @@ jobs:
          skopeo --insecure-policy copy docker://mysql:8 docker://registry.cn-hangzhou.aliyuncs.com/keersun/mysql:8
          skopeo --insecure-policy copy docker://victoriametrics/victoria-metrics:v1.95.1 docker://registry.cn-hangzhou.aliyuncs.com/keersun/victoria-metrics:v1.95.1
          skopeo --insecure-policy copy docker://apache/hertzbeat docker://registry.cn-hangzhou.aliyuncs.com/keersun/hertzbeat
+         skopeo --insecure-policy copy docker://postgres:15 docker://registry.cn-hangzhou.aliyuncs.com/keersun/postgres:15
 
  
