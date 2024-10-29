@@ -34,8 +34,8 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-         skopeo --insecure-policy copy docker://gitlab/gitlab-ce:17.3.0 docker://registry.cn-hangzhou.aliyuncs.com/keersun/gitlab-ce:17.3.0
-         skopeo --insecure-policy copy docker://gitlab/gitlab-ce:17.4.0 docker://registry.cn-hangzhou.aliyuncs.com/keersun/gitlab-ce:17.4.0
+         skopeo --insecure-policy copy docker://gitlab/gitlab-ce:17.3.5-ce.0 docker://registry.cn-hangzhou.aliyuncs.com/keersun/gitlab-ce:17.3.5
+         skopeo --insecure-policy copy docker://gitlab/gitlab-ce:17.4.3-ce.0 docker://registry.cn-hangzhou.aliyuncs.com/keersun/gitlab-ce:17.4.3
          
          skopeo --insecure-policy copy docker://nextcloud/aio-watchtower:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/aio-watchtower:latest
          skopeo --insecure-policy copy docker://nextcloud/aio-nextcloud:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/aio-nextcloud:latest
