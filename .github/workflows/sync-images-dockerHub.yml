@@ -34,8 +34,33 @@ jobs:
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
         #!/usr/bin/env bash
-         skopeo --insecure-policy copy docker://gitlab/gitlab-ce:17.3.5-ce.0 docker://registry.cn-hangzhou.aliyuncs.com/keersun/gitlab-ce:17.3.5
-         skopeo --insecure-policy copy docker://gitlab/gitlab-ce:17.4.3-ce.0 docker://registry.cn-hangzhou.aliyuncs.com/keersun/gitlab-ce:17.4.3
+         #skopeo --insecure-policy copy docker://gitlab/gitlab-ce:17.3.5-ce.0 docker://registry.cn-hangzhou.aliyuncs.com/keersun/gitlab-ce:17.3.5
+         #skopeo --insecure-policy copy docker://gitlab/gitlab-ce:17.4.3-ce.0 docker://registry.cn-hangzhou.aliyuncs.com/keersun/gitlab-ce:17.4.3
+
+         # mailcow 
+         skopeo --insecure-policy copy docker://nginx:mainline-alpine docker://registry.cn-hangzhou.aliyuncs.com/keersun/nginx:mainline-alpine
+         skopeo --insecure-policy copy docker://mailcow/backup:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/backup:latest 
+         skopeo --insecure-policy copy docker://mcuadros/ofelia:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/ofelia:latest
+         skopeo --insecure-policy copy docker://memcached:alpine  docker://registry.cn-hangzhou.aliyuncs.com/keersun/memcached:alpine 
+         skopeo --insecure-policy copy docker://mailcow/sogo:1.125 docker://registry.cn-hangzhou.aliyuncs.com/keersun/sogo:1.125
+         skopeo --insecure-policy copy docker://mariadb:10.5 docker://registry.cn-hangzhou.aliyuncs.com/keersun/mariadb:10.5
+         skopeo --insecure-policy copy docker://mailcow/netfilter:1.59 docker://registry.cn-hangzhou.aliyuncs.com/keersun/netfilter:1.59
+         skopeo --insecure-policy copy docker://mailcow/clamd:1.66 docker://registry.cn-hangzhou.aliyuncs.com/keersun/clamd:1.66
+         skopeo --insecure-policy copy docker://mailcow/unbound:1.23 docker://registry.cn-hangzhou.aliyuncs.com/keersun/unbound:1.23
+         skopeo --insecure-policy copy docker://mailcow/dovecot:2.1 docker://registry.cn-hangzhou.aliyuncs.com/keersun/dovecot:2.1
+         skopeo --insecure-policy copy docker://mailcow/phpfpm:1.89 docker://registry.cn-hangzhou.aliyuncs.com/keersun/phpfpm:1.89
+         skopeo --insecure-policy copy docker://mailcow/acme:1.90 docker://registry.cn-hangzhou.aliyuncs.com/keersun/acme:1.90
+         skopeo --insecure-policy copy docker://mailcow/watchdog:2.05 docker://registry.cn-hangzhou.aliyuncs.com/keersun/watchdog:2.05
+         skopeo --insecure-policy copy docker://redis:7-alpine docker://registry.cn-hangzhou.aliyuncs.com/keersun/redis:7-alpine
+         skopeo --insecure-policy copy docker://mailcow/olefy:1.13 docker://registry.cn-hangzhou.aliyuncs.com/keersun/olefy:1.13
+         skopeo --insecure-policy copy docker://mailcow/solr:1.8.3 docker://registry.cn-hangzhou.aliyuncs.com/keersun/solr:1.8.3
+         skopeo --insecure-policy copy docker://mailcow/dockerapi:2.08 docker://registry.cn-hangzhou.aliyuncs.com/keersun/dockerapi:2.08
+         skopeo --insecure-policy copy docker://mailcow/postfix:1.76 docker://registry.cn-hangzhou.aliyuncs.com/keersun/postfix:1.76
+         skopeo --insecure-policy copy docker://mailcow/rspamd:1.97 docker://registry.cn-hangzhou.aliyuncs.com/keersun/rspamd:1.97
+         skopeo --insecure-policy copy docker://mariadb:10.5 docker://registry.cn-hangzhou.aliyuncs.com/keersun/mariadb:10.5
+         skopeo --insecure-policy copy docker://memcached:alpine docker://registry.cn-hangzhou.aliyuncs.com/keersun/memcached:alpine
+         skopeo --insecure-policy copy docker://robbertkl/ipv6nat:latest  docker://registry.cn-hangzhou.aliyuncs.com/keersun/ipv6nat:latest 
+
          
          skopeo --insecure-policy copy docker://nextcloud/aio-watchtower:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/aio-watchtower:latest
          skopeo --insecure-policy copy docker://nextcloud/aio-nextcloud:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/aio-nextcloud:latest
