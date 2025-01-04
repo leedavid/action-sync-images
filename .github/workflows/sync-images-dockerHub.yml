@@ -74,7 +74,7 @@ jobs:
          skopeo --insecure-policy copy docker://nextcloud/aio-domaincheck:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/aio-domaincheck:latest
          skopeo --insecure-policy copy docker://nextcloud/aio-fulltextsearch:latest docker://registry.cn-hangzhou.aliyuncs.com/keersun/aio-fulltextsearch:latest
          #skopeo --insecure-policy copy docker://ghcr.io/open-webui/open-webui:main docker://registry.cn-hangzhou.aliyuncs.com/keersun/open-webui:main
-         #ghcr.io/open-webui/open-webui:main 
+         #ghcr.io/open-webui/open-webui:main  
 
  
  
